@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
     <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link rel="stylesheet" href="bisnis_detail.css">
+    <link rel="stylesheet" href="../dashboard.css">
     <script src="../assets/js/ie-emulation-modes-warning.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -17,37 +17,54 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WSA</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../task_list.html">Task</a></li>
-      <li class="active"><a href="../bisnis_list.html">Bisnis</a></li>
-      <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href=".php">Product
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="../products_list.html">Product</a></li>
-              <li><a href="../service_list.html">Service</a></li>
-              <li><a href="../digital_list.html">Digital</a></li>
-              <li><a href="../subcribe_list.html">Subcribe</a></li>
-            </ul>
-        </li>
-      <li><a href="../transactions_list.html">Transaction</a></li> 
-      <li><a href="../users_list.html">User</a></li> 
-      <form class="../navbar-form navbar-right">
-        <input type="text" class="form-control" placeholder="Search..." autofocus>
-      </form>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href=""><span class="glyphicon glyphicon-user" onclick="openNav()"></span></a></li>
-    </ul>
-    </div>
-  </div>
-</nav><!-- navbar -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.whiteskyaviation.co.id/">WSA</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../task_list.html">Task</a></li>
+            <li class="active"><a href="../bisnis_list.html">Bisnis</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href=".php">Product
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../products_list.html">Product</a></li>
+                <li><a href="../service_list.html">Service</a></li>
+                <li><a href="../digital_list.html">Digital</a></li>
+                <li><a href="../subcribe_list.html">Subcribe</a></li>
+              </ul>
+            </li> 
+            <li><a href="../transactions_list.html">Transaction</a></li> 
+            <li><a href="../users_list.html">User</a></li>
+          </ul>  
+            <form class="navbar-form navbar-right">
+              <input type="text" class="form-control" placeholder="Search...">
+            </form>
+          
+          <!--
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user" onclick="openNav()"></span></a></li>
+            <li>
+              <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="#">Nama User</a>   
+              <a href="#">Ubah Password</a>    
+              <a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a>   
+              </div>
+            </li>
+          </ul>
+          -->
+        </div>
+      </div>
+    </nav><!-- navbar -->
 
 <div class="container">
   <div class="page-header">
@@ -79,9 +96,9 @@
       </a>
     </div>
   </div> <!-- carousel -->
-  
+  <h5 class="sub-header">DETAIL</h5>
   <table class="table">
-    <caption>DETAIL</caption>
+    
     <tr>
       <td>Nama Perusahaan</td>
       <td>:</td>
@@ -167,7 +184,7 @@
       <tr>
         <td>1</td>
         <td>Kantor Pusat Pengolahan Data dan Dokumen Pajak</td>
-        <td>Jl Budi Raya,Jakarta Barat/td>
+        <td>Jl Budi Raya,Jakarta Barat</td>
         <td>021-7891011</td>
         <td>021-7891012</td>
         <td>kppddp.go.id</td>
