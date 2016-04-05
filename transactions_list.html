@@ -5,81 +5,150 @@
   <title>WSA</title>
 <!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/bootstrap-theme.css">
-   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-   <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WSA</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="task_list.html">Task</a></li>
-      <li><a href="bisnis_list.html">Bisnis</a></li>
-      <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href=".php">Product
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="products_list.html">Product</a></li>
-              <li><a href="service_list.html">Service</a></li>
-              <li><a href="digital_list.html">Digital</a></li>
-              <li><a href="subcribe_list.html">Subcribe</a></li>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.whiteskyaviation.co.id/">WSA</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="task_list.html">Task</a></li>
+            <li><a href="bisnis_list.html">Bisnis</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href=".php">Product
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="products_list.html">Product</a></li>
+                <li><a href="service_list.html">Service</a></li>
+                <li><a href="digital_list.html">Digital</a></li>
+                <li><a href="subcribe_list.html">Subcribe</a></li>
+              </ul>
+            </li> 
+            <li class="active"><a href="transactions_list.html">Transaction</a></li> 
+            <li><a href="users_list.html">User</a></li>
             </ul>
-        </li> 
-      <li class="active"><a href="transactions_list.html">Transaction</a></li> 
-      <li><a href="users_list.html">User</a></li> 
-      <form class="navbar-form navbar-right">
-        <input type="text" class="form-control" placeholder="Search..." autofocus>
-      </form>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user" onclick="openNav()"></span></a></li>
-    </ul>
-  </div>
-</nav>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Nama User</a>   
-  <a href="#">Ubah Password</a>    
-  <a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a>   
-</div>
-<div class="container">
-<table class="table table-bordered table-striped table-hover table-responsive">
-	<caption>Table Transactions</caption>
-  	<thead>
-        <tr>
-          	<td>No.</td>
-          	<td>Id Transaksi</td>
-          	<td>Tgl Penggunaan</td>
-          	<td>Nama Pengguna</td>
-          	<td>Perusahaan Pengguna</td>
-          	<td>Id Layanan</td>
-          	<td>Nama Layanan</td>
-          	<td>Nama Perusahaan</td>
-          	<td>Nilai Transaksi</td>
-        </tr>
-    </thead>
-  	<tbody>
-    	<tr>
-          	<td>1</td>
-          	<td>WSA-TRX-001</td>
-          	<td>01-01-2016</td>
-          	<td>Hendro Pujiono</td>
-          	<td>PT ASAH MAJU</td>
-          	<td>WSA-001</td>
-          	<td>VIP Transport</td>
-          	<td>Whitesky Aviation</td>
-          	<td>24.000.000</td>
-        </tr>
-  	</tbody>
-</table>
-<div class="container">
+            <form class="navbar-form navbar-right">
+              <input type="text" class="form-control" placeholder="Search...">
+            </form>
+          
+          <!--
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user" onclick="openNav()"></span></a></li>
+            <li>
+              <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="#">Nama User</a>   
+              <a href="#">Ubah Password</a>    
+              <a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a>   
+              </div>
+            </li>
+          </ul>
+          -->
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+          <h1 class="page-header">TRANSACTIONS LIST</h1>
+          <!--
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div> 
+
+          <h2 class="sub-header">Section title</h2> -->
+          <div class="table-responsive">
+             <table class="table table-striped">
+              <thead>
+                <tr>
+                    <td>No.</td>
+                    <td class="table-hide">Id Transaksi</td>
+                    <td>Tgl Penggunaan</td>
+                    <td>Nama Pengguna</td>
+                    <td class="table-hide">Perusahaan Pengguna</td>
+                    <td class="table-hide">Id Layanan</td>
+                    <td>Nama Layanan</td>
+                    <td class="table-hide">Nama Perusahaan</td>
+                    <td class="table-hide">Nilai Transaksi</td>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                    <td>1</td>
+                    <td class="table-hide">WSA-TRX-001</td>
+                    <td>01-01-2016</td>
+                    <td>Hendro Pujiono</td>
+                    <td class="table-hide">PT ASAH MAJU</td>
+                    <td class="table-hide">WSA-001</td>
+                    <td>VIP Transport</td>
+                    <td class="table-hide">Whitesky Aviation</td>
+                    <td class="table-hide">24.000.000</td>
+                </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>    
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -91,7 +160,6 @@ function closeNav() {
     document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
