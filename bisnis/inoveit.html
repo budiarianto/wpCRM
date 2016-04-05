@@ -43,8 +43,7 @@
       </form>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span>profile</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
+      <li><a href=""><span class="glyphicon glyphicon-user" onclick="openNav()"></span></a></li>
     </ul>
     </div>
   </div>
@@ -177,6 +176,17 @@
     </tbody>
   </table>
 </div><!--container-->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
