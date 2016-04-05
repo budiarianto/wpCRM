@@ -40,18 +40,23 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user" onclick="openNav()"></span></a></li>
+      <li>
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Nama User</a>   
+        <a href="#">Ubah Password</a>    
+        <a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a>   
+        </div>
+      </li>
     </ul>
+
   </div>
 </nav>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Nama User</a>   
-  <a href="#">Ubah Password</a>    
-  <a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a>   
-</div>
-<div class="container">
-<table class="table table-bordered table-striped table-hover table-responsive">
-<caption>Table Task</caption>
+
+
+<h2 class="sub-header">Task List</h2>
+<div class="table-responsive">
+<table class="table table-striped table-hover">
   <thead>
     <tr>
       <td>No.</td>
