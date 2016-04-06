@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </head>
@@ -34,18 +36,18 @@
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="products_list.html">Product</a></li>
-                <li><a href="service_list.html">Service</a></li>
-                <li  class="active"><a href="digital_list.html">Digital</a></li>
+                <li class="active"><a href="service_list.html">Service</a></li>
+                <li><a href="digital_list.html">Digital</a></li>
                 <li><a href="subcribe_list.html">Subcribe</a></li>
               </ul>
             </li> 
             <li><a href="transactions_list.html">Transaction</a></li> 
             <li><a href="users_list.html">User</a></li>
-           </ul>  
+          </ul>  
             <form class="navbar-form navbar-right">
               <input type="text" class="form-control" placeholder="Search...">
             </form>
-         
+          
           <!--
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user" onclick="openNav()"></span></a></li>
@@ -62,15 +64,91 @@
         </div>
       </div>
     </nav>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Nama User</a>   
-  <a href="#">Ubah Password</a>    
-  <a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a>   
-</div>
-<div class="container">
+    <div class="container-fluid">
+      <div class="row">
+      <!--
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>-->
+        <div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 main">
 
-<div class="container">
+          <h1 class="page-header">DIGITAL LIST</h1>
+          <!--
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div> 
+
+          <h2 class="sub-header">Section title</h2> -->
+          <div class="table-responsive">
+             <table class="table table-striped">
+              <thead>
+                <tr>
+                  <td>No.</td>
+                  <td class="hidden-xs">Id Products</td>
+                  <td>Nama produk</td>
+                  <td>Harga Produk</td>
+                  <td>Durasi</td>
+                  <td class="hidden-xs">Keterangan Produk</td>
+                  <td class="hidden-xs">Tipe Produk</td>
+                  <td>Id Bisnis</td>
+                  </div>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="hidden-xs">DI-WSA-001</td>
+                  <td>Wedding Documentation</td>
+                  <td>Nego</td>
+                  <td>Daily</td>
+                  <td class="hidden-xs">Dokumentasi Pernikahan</td>
+                  <td class="hidden-xs">Service</td>
+                  <td>WHITESKY AVIATION</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>    
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";

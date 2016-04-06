@@ -24,20 +24,31 @@ body {
 .navbar-fixed-top {
   border: 0;
 }
-/* TABLE HIDE */
-.table-hide {
+/* TABLE ROTATION 
+==============================
+*/
+.table-before{
   display: none;
 }
-@media (min-width: 768px) {
-  .table-hide {
-    z-index: 1000;
+@media (min-width: 768px){
+  .table-before{
     display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; Scrollable contents if viewport is shorter than content. 
-    
   }
 }
+
+.table-after{
+  display: none;
+}
+@media(max-width: 768px){
+  .table-after{
+    display: table;
+    
+  }
+
+  
+}
+
+
 /*
 Sidebar
  */
